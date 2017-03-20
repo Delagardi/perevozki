@@ -1,0 +1,1071 @@
+/*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
+/*=======================================================*/
+/* Normalize.css & REDY.IO styleguide START */
+/*=======================================================*/
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */ }
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+  box-sizing: border-box; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+template,
+[hidden] {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+  font-weight: bold; }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/*=======================================================*/
+/* Normalize.css & REDY.IO styleguide END */
+/*=======================================================*/
+body {
+  font-family: 'HelveticaNeueRomans', sans-serif;
+  font-size: 16px; }
+
+h1 {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 36px; }
+
+h2 {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 30px; }
+
+h3 {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 24px; }
+
+.main-headers span {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 62px;
+  color: #e0eaf8;
+  text-transform: uppercase; }
+
+.header-menu nav ul li a, .main-services__item .main-services__item-headers h4, .algorithm-list .algorithm-item .algorith-item__text h4, .tablinks {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: 212121; }
+
+.header-contacts__tel-number {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 20px;
+  color: #1064d3; }
+
+.header-contacts__btn-link, .main-services__item .main-services__item-btn a, .about-gallery__btn .about-gallery__btn-link {
+  font-family: 'HelveticaNeueRomans', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff; }
+
+.main-services__item .main-services__item-headers span {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #636363; }
+
+.algorithm-list .algorithm-item .algorithm-item__number {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 100px;
+  color: #fefefe; }
+
+.adress-info .adress-info__text {
+  font-family: 'HelveticaNeueRomans', sans-serif;
+  font-size: 20px;
+  color: #fff; }
+
+.adress-info .adress-info__contacts-tel, .footer-top__contacts .footer-tel a {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 24px;
+  color: #fff; }
+
+.adress-info .adress-info__contacts-time, .footer-text h3 {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff; }
+
+.footer-menu ul li a {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff; }
+
+/*=======================================================*/
+/* COMMON STYLE START */
+/*=======================================================*/
+@font-face {
+  font-family: "HelveticaNeueRoman";
+  src: url("../fonts/HelveticaNeueCyr-Roman.otf") format("opentype"); }
+@font-face {
+  font-family: "GilroyExtraBold";
+  src: url("../fonts/RadomirTinkov-Gilroy-ExtraBold.otf") format("opentype"); }
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0; }
+
+.clearfix {
+  clear: both; }
+
+.wrapper {
+  width: 100%; }
+
+/*=======================================================*/
+/* COMMON STYLE END */
+/*=======================================================*/
+/*=======================================================*/
+/* HEADER STYLE START */
+/*=======================================================*/
+.header {
+  margin: 0 auto;
+  width: 1200px; }
+
+.header-logo {
+  width: 222px;
+  display: inline-block;
+  margin: 15px 0px; }
+
+.header-logo__img {
+  background: url("../img/logo.png") no-repeat;
+  display: block;
+  width: 222px;
+  height: 60px; }
+
+.header-menu {
+  width: 700px;
+  display: inline-block;
+  vertical-align: top; }
+  .header-menu nav ul {
+    display: flex;
+    justify-content: space-around;
+    line-height: 95px;
+    height: 95px; }
+    .header-menu nav ul li {
+      height: 95px;
+      vertical-align: top;
+      line-height: 95px; }
+      .header-menu nav ul li a {
+        display: block;
+        height: 70px; }
+        .header-menu nav ul li a:hover {
+          border-bottom: solid 4px #1064d3; }
+
+.header-contacts {
+  width: 250px;
+  display: inline-block;
+  vertical-align: top; }
+
+.header-contacts__tel {
+  height: 46px;
+  text-align: right;
+  margin-top: 10px;
+  position: relative; }
+  .header-contacts__tel .header-contacts__icon-time {
+    background: url("../img/sprite.png") 0 0 no-repeat;
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: -8px; }
+  .header-contacts__tel .header-contacts__icon-tel {
+    background: url("../img/sprite.png") -45px 0px no-repeat;
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: -8px;
+    left: 42px; }
+
+.header-contacts__btn {
+  width: 255px;
+  height: 46px; }
+
+.header-contacts__btn-link {
+  width: 270px;
+  padding: 15px 55px;
+  background: #1064d3; }
+  .header-contacts__btn-link:hover {
+    background: #093774; }
+
+/*=======================================================*/
+/* HEADER STYLE END */
+/*=======================================================*/
+/*=======================================================*/
+/* SLIDER STYLE START */
+/*=======================================================*/
+.bg-slider {
+  min-height: 530px;
+  background: url("../img/bg-slider.jpg") no-repeat; }
+  .bg-slider .slider-content {
+    margin: 0 auto;
+    width: 1200px;
+    position: relative; }
+    .bg-slider .slider-content h1 {
+      color: #fff;
+      text-align: center;
+      padding-top: 30px;
+      margin-top: 0;
+      text-transform: uppercase; }
+    .bg-slider .slider-content .slider-content__man {
+      position: absolute;
+      bottom: -418px;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      width: 692px;
+      height: 397px;
+      background: url(../img/bg-slider__man.jpg) no-repeat;
+      z-index: 15; }
+
+.road-back {
+  position: absolute;
+  top: 250px;
+  overflow: hidden;
+  width: 100%;
+  min-width: 768px;
+  height: 325px;
+  background: transparent; }
+
+.road-front {
+  position: absolute;
+  top: 315px;
+  overflow: hidden;
+  width: 100%;
+  min-width: 768px;
+  height: 320px;
+  background: transparent; }
+
+.road-back .car {
+  position: absolute; }
+
+.road-front .truck {
+  position: absolute; }
+
+/*=======================================================*/
+/* SLIDER STYLE END */
+/*=======================================================*/
+/*=======================================================*/
+/* MAIN STYLE START */
+/*=======================================================*/
+.bg-main {
+  margin-top: -24px;
+  background: url("../img/bg-geometric-gradient.jpg") no-repeat; }
+
+.main-services {
+  margin: 0 auto;
+  width: 1200px; }
+
+.main-headers {
+  text-align: center;
+  position: relative; }
+  .main-headers h2 {
+    text-transform: uppercase;
+    margin-bottom: 120px;
+    display: inline-block;
+    margin-top: 0;
+    padding-top: 24px;
+    padding-bottom: 60px;
+    position: relative;
+    z-index: 2;
+    border-bottom: 4px solid #1064d3; }
+  .main-headers span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    padding-top: 24px; }
+
+.main-services__list {
+  margin: 50px 0 120px; }
+
+.main-services__item {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  width: 267px;
+  display: inline-block;
+  margin-right: 36px;
+  min-height: 300px;
+  background: #fff; }
+  .main-services__item:nth-child(4n) {
+    margin-right: 0px; }
+  .main-services__item .main-services__item-img {
+    margin-bottom: 20px; }
+    .main-services__item .main-services__item-img img {
+      margin-top: -22px; }
+  .main-services__item .main-services__item-headers {
+    text-align: center; }
+    .main-services__item .main-services__item-headers h4 {
+      margin-bottom: 5px; }
+  .main-services__item .main-services__item-btn {
+    width: 230px;
+    height: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px; }
+    .main-services__item .main-services__item-btn a {
+      display: block;
+      width: 230px;
+      height: 40px;
+      background: #1064d3;
+      line-height: 40px; }
+      .main-services__item .main-services__item-btn a:hover {
+        background: #093774; }
+
+.main-benefits__list {
+  width: 1200px;
+  margin: 50px auto 150px; }
+  .main-benefits__list .main-benefits__item {
+    width: 210px;
+    display: inline-block;
+    margin-right: 32px;
+    text-align: center;
+    position: relative;
+    padding-top: 100px;
+    vertical-align: top; }
+    .main-benefits__list .main-benefits__item .main-benefits__icon {
+      position: absolute;
+      top: 0;
+      left: 48px;
+      width: 112px;
+      height: 112px; }
+    .main-benefits__list .main-benefits__item:last-of-type {
+      margin-right: 0px; }
+    .main-benefits__list .main-benefits__item .main-benefits__text {
+      padding-top: 30px; }
+    .main-benefits__list .main-benefits__item .car {
+      background: url("../img/sprite.png") 0 -40px no-repeat; }
+    .main-benefits__list .main-benefits__item .pay {
+      background: url("../img/sprite.png") -112px -40px no-repeat; }
+    .main-benefits__list .main-benefits__item .weekend {
+      background: url("../img/sprite.png") -224px -40px no-repeat; }
+    .main-benefits__list .main-benefits__item .perhour {
+      background: url("../img/sprite.png") -336px -40px no-repeat; }
+    .main-benefits__list .main-benefits__item .prices {
+      background: url("../img/sprite.png") -448px -40px no-repeat; }
+
+.bg-algorithm {
+  background: #f0f0f0; }
+
+.algorithm-list {
+  width: 1200px;
+  margin: 50px auto;
+  padding-bottom: 50px; }
+  .algorithm-list .algorithm-item {
+    width: 267px;
+    min-height: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 38px;
+    position: relative;
+    background: url("../img/bg-algorithm-item.png") no-repeat;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: -30px; }
+    .algorithm-list .algorithm-item:last-of-type {
+      margin-right: 0; }
+    .algorithm-list .algorithm-item .algorithm-item__number {
+      position: absolute;
+      top: -10px;
+      left: 10px;
+      color: rgba(255, 255, 255, 0.5); }
+    .algorithm-list .algorithm-item .algorith-item__icon {
+      width: 112px;
+      height: 112px;
+      display: block;
+      top: 44px;
+      left: 81px;
+      position: absolute; }
+    .algorithm-list .algorithm-item .zayavka {
+      background: url("../img/sprite.png") -70px -365px no-repeat; }
+    .algorithm-list .algorithm-item .predlogeniye {
+      background: url("../img/sprite.png") -179px -365px no-repeat; }
+    .algorithm-list .algorithm-item .personal {
+      background: url("../img/sprite.png") -288px -365px no-repeat; }
+    .algorithm-list .algorithm-item .vypolneniye {
+      background: url("../img/sprite.png") -398px -365px no-repeat; }
+    .algorithm-list .algorithm-item .algorith-item__text {
+      text-align: center; }
+      .algorithm-list .algorithm-item .algorith-item__text h4 {
+        display: inline-block;
+        margin-top: 150px;
+        padding-bottom: 15px;
+        border-bottom: 4px solid #1064d3; }
+      .algorithm-list .algorithm-item .algorith-item__text span {
+        display: block; }
+
+.bg-adress {
+  background: #1064d3; }
+
+.adress-content {
+  margin: 0 auto;
+  width: 1200px;
+  padding-bottom: 30px; }
+
+.adress-info {
+  width: 400px;
+  margin: 20px;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 30px; }
+  .adress-info .adress-info__text {
+    border-top: 1px solid #fff; }
+  .adress-info .adress-info__contacts {
+    padding-left: 50px; }
+  .adress-info .adress-info__contacts-tel {
+    display: block;
+    margin: 30px 5px;
+    position: relative; }
+    .adress-info .adress-info__contacts-tel:before {
+      content: "";
+      position: absolute;
+      display: block;
+      left: -60px;
+      top: -11px;
+      width: 50px;
+      height: 50px;
+      background: url("../img/sprite.png") -3px -242px no-repeat; }
+  .adress-info .adress-info__contacts-time {
+    margin: 30px 5px;
+    position: relative; }
+    .adress-info .adress-info__contacts-time:before {
+      content: "";
+      position: absolute;
+      display: block;
+      left: -60px;
+      top: -11px;
+      width: 50px;
+      height: 50px;
+      background: url("../img/sprite.png") -3px -305px no-repeat; }
+
+.adress-map {
+  width: 750px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -30px; }
+
+.about {
+  margin: 0 auto;
+  width: 1200px; }
+
+.about-gallery {
+  width: 560px;
+  height: 680px;
+  background: #e7e7e7;
+  margin-top: 150px;
+  display: inline-block;
+  margin-bottom: 60px; }
+  .about-gallery .about-gallery__list {
+    padding: 35px 10px 35px 19px; }
+    .about-gallery .about-gallery__list .about-gallery__item {
+      width: 150px;
+      display: inline-block;
+      margin-right: 35px;
+      margin-bottom: 35px; }
+      .about-gallery .about-gallery__list .about-gallery__item img {
+        border-radius: 5px;
+        border: 3px solid #fff; }
+      .about-gallery .about-gallery__list .about-gallery__item:nth-child(3n) {
+        margin-right: 0; }
+
+.about-gallery__btn {
+  text-align: center; }
+  .about-gallery__btn .about-gallery__btn-link {
+    width: 270px;
+    padding: 15px 55px;
+    background: #1064d3; }
+    .about-gallery__btn .about-gallery__btn-link:hover {
+      background: #093774; }
+
+.about-content {
+  width: 600px;
+  margin-left: 30px;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 60px;
+  margin-bottom: 60px; }
+
+/*=======================================================*/
+/* MAIN STYLE END */
+/*=======================================================*/
+/*=======================================================*/
+/* FOOTER STYLE START */
+/*=======================================================*/
+.bg-footer {
+  background: url("../img/bg-footer.jpg") no-repeat;
+  min-height: 350px; }
+
+.footer-content {
+  width: 1200px;
+  margin: 0 auto; }
+
+.footer-logo {
+  width: 47px;
+  display: inline-block;
+  margin: 10px 0px; }
+
+.footer-logo__img {
+  background: url("../img/logo_small.png") no-repeat;
+  display: block;
+  width: 47px;
+  height: 38px; }
+
+.footer-menu {
+  width: 700px;
+  display: inline-block;
+  vertical-align: top; }
+  .footer-menu ul {
+    line-height: 75px;
+    height: 75px;
+    margin-left: 30px; }
+    .footer-menu ul li {
+      display: inline-block;
+      line-height: 75px;
+      height: 75px;
+      margin-right: 40px; }
+      .footer-menu ul li:last-of-type {
+        margin-right: 0; }
+      .footer-menu ul li a {
+        display: block; }
+
+.footer-top__contacts {
+  display: inline-block;
+  width: 380px;
+  text-align: right;
+  vertical-align: top;
+  line-height: 75px; }
+  .footer-top__contacts .footer-icons {
+    position: relative; }
+    .footer-top__contacts .footer-icons .footer-icon {
+      display: block;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      right: 0;
+      top: 0; }
+    .footer-top__contacts .footer-icons .vk {
+      left: 20px;
+      top: 10px;
+      background: url("../img/sprite.png") -73px -251px no-repeat; }
+      .footer-top__contacts .footer-icons .vk:hover {
+        background: url("../img/sprite.png") -73px -305px no-repeat; }
+    .footer-top__contacts .footer-icons .instagram {
+      left: 75px;
+      top: 10px;
+      background: url("../img/sprite.png") -134px -251px no-repeat; }
+      .footer-top__contacts .footer-icons .instagram:hover {
+        background: url("../img/sprite.png") -134px -305px no-repeat; }
+  .footer-top__contacts .footer-tel a {
+    position: relative; }
+    .footer-top__contacts .footer-tel a:before {
+      content: "";
+      position: absolute;
+      display: block;
+      left: -60px;
+      top: -14px;
+      width: 50px;
+      height: 50px;
+      background: url("../img/sprite.png") -3px -242px no-repeat; }
+
+.footer-text {
+  width: 380px;
+  display: inline-block; }
+  .footer-text h3 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px; }
+  .footer-text p {
+    color: #fff; }
+
+.footer-widget {
+  float: right;
+  margin-right: 60px; }
+
+/*=======================================================*/
+/* FOOTER STYLE END */
+/*=======================================================*/
+/*=======================================================*/
+/* SERVICES PAGE STYLE START */
+/*=======================================================*/
+.bg-additional {
+  background: #f0f0f0; }
+
+.additional {
+  margin: 0 auto;
+  width: 1200px;
+  margin-bottom: 100px; }
+  .additional .additional-content {
+    padding: 30px 10px; }
+
+.loader {
+  margin: 0 auto;
+  width: 1200px;
+  margin-bottom: 100px; }
+
+.tabs {
+  min-height: 400px; }
+
+/* Style the tab */
+div.tab {
+  float: left;
+  width: 30%;
+  min-height: 300px; }
+
+/* Style the buttons inside the tab */
+div.tab button {
+  display: block;
+  background-color: #fff;
+  padding: 11px 16px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  padding-left: 64px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75); }
+
+.tablinks {
+  position: relative; }
+
+.tablinks:before {
+  content: "";
+  display: block;
+  width: 43px;
+  height: 43px;
+  position: absolute;
+  top: 0;
+  left: -1px; }
+
+.relocation:before {
+  background: url("../img/sprite.png") -7px -372px no-repeat; }
+
+.loaders:before {
+  background: url("../img/sprite.png") -7px -419px no-repeat; }
+
+.taxi:before {
+  background: url("../img/sprite.png") -7px -468px no-repeat; }
+
+.cargo:before {
+  background: url("../img/sprite.png") -7px -515px no-repeat; }
+
+/* Change background color of buttons on hover */
+div.tab .relocation:hover {
+  background-color: #6c43c5;
+  color: #fff; }
+
+div.tab .loaders:hover {
+  background-color: #3791c1;
+  color: #fff; }
+
+div.tab .taxi:hover {
+  background-color: #e7c52a;
+  color: #fff; }
+
+div.cargo .taxi:hover {
+  background-color: #624e39;
+  color: #fff; }
+
+/* Create an active/current "tab button" class */
+div.tab button.relocation.active {
+  background-color: #6c43c5;
+  color: #fff; }
+
+div.tab button.loaders.active {
+  background-color: #3791c1;
+  color: #fff; }
+
+div.tab button.taxi.active {
+  background-color: #e7c52a;
+  color: #fff; }
+
+div.tab button.cargo.active {
+  background-color: #624e39;
+  color: #fff; }
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  float: left;
+  padding: 0px 12px 5px 40px;
+  width: 70%;
+  min-height: 300px; }
+  .tabcontent p {
+    margin-top: 0; }
+
+/*=======================================================*/
+/* SERVICES PAGE STYLE END */
+/*=======================================================*/
+
+/*# sourceMappingURL=main.css.map */

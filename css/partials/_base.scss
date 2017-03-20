@@ -1,0 +1,124 @@
+$widthPage: 1200px;
+$blueDesign: #1064d3;
+$blackHeader: 212121;
+
+// Font Face Mixin start
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+  $src: null;
+
+  $extmods: (
+    eot: "?",
+    svg: "#" + str-replace($name, " ", "_")
+  );
+
+  $formats: (
+    otf: "opentype",
+    ttf: "truetype"
+  );
+
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+
+// Font Face Mixin end
+%fontText {
+  font-family: 'HelveticaNeueRomans', sans-serif;
+  font-size: 16px;
+}
+
+%fontHeaderH1 {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 36px;
+}
+
+%fontHeaderH2 {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 30px;
+}
+
+%fontHeaderH3 {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 24px;
+}
+
+%fontHeaderSpan {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 62px;
+  color: #e0eaf8;
+  text-transform: uppercase;
+}
+
+%fontNav {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: $blackHeader;
+}
+
+%fontTel {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 20px;
+  color: $blueDesign;
+}
+
+%fontBtnLink {
+  font-family: 'HelveticaNeueRomans', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+%fontItemSubheader {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #636363;
+}
+
+%fontAlgorithmNumber {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 100px;
+  color: #fefefe;
+}
+
+%fontAdressInfo {
+  font-family: 'HelveticaNeueRomans', sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+
+%fontTelAdress {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 24px;
+  color: #fff;
+}
+
+%fontTimeAdress {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+%fontFooterNav {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+
+
+
+
